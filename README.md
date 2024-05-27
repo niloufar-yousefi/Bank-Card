@@ -4,7 +4,7 @@
 
 ![final view](https://github.com/niloufar-yousefi/Bank-Card/assets/156951582/1783cf32-39f7-4cf1-989b-9d1bc22fcc37)
 
-[- [Demo Project](https://niloufar-yousefi.github.io/ToDoList/)](https://niloufar-yousefi.github.io/Bank-Card/)
+- [Demo Project](https://niloufar-yousefi.github.io/Bank-Card/)
 
 - Developed by Niloofar Yoosefi
 
