@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+   @font-face {
+    font-family: Freehand-Regular ;
+    src: url('../font/Freehand-Regular.ttf');
+}
+@font-face {
+    font-family: VT323;
+    src: url('../font/VT323-Regular.ttf');
+} 
+ main{
+    width: 100%;
+    height: 100vh;
+     background: url('../img/pexels-n-voitkevich-6214363.jpg') ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 150px;
+    @media only screen and (max-width:1200px) {
+        padding-right: 20px;          
+      }
+    >section{
+        width: 30%;    
+        height: 550px;
+        border: 2px solid #2d2d2d;
+        border-radius: 10%;
+        box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.219), -25px 0 20px -20px rgba(0, 0, 0, 0.224);
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: 2 !important;
+        flex-wrap: wrap;
+        @media only screen and (max-width: 1200px) {
+            width:55%;           
+          }
+        >h1{
+            font-size: 20px;
+            font-family:  Freehand-Regular;
+            color: white;
+            text-transform: capitalize;
+            width: 100%;
+            height: 20%;
+            text-align: center;
+            padding-top: 20px;
+            height: 10%;
+        }
+        >form{
+            width: 100%;
+            padding: 10px 30px;
+            height: 90%;
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-between;  
+            >p{
+                width: 100%;
+                color: white;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                font-size: 15px;
+                margin-top: 20px;
+                text-transform: capitalize;
+            }                         
+            >input{              
+                height: 40px;
+                text-transform: capitalize;
+                font-family: VT323;
+                font-size: 20px;
+                background: none;
+                outline: none;
+                border: none;
+                border-bottom: 2px solid #2d2d2d;
+                padding-left: 5px; 
+                transition: all 0.5s; 
+                color: white;  
+            }
+            >input:nth-of-type(1),
+            >input:nth-of-type(2),
+            >input:nth-of-type(3),
+            >input:nth-of-type(4)
+            {
+                width: 20%;
+            }
+            >input:nth-of-type(5),
+            >input:nth-of-type(6)           
+            {
+                width: 45%;               
+            } 
+            >input:nth-of-type(7){
+                width: 100%;               
+            }  
+            >i{
+                position: absolute;
+                top: 66%;
+                right: 8%;
+                z-index: 10;
+                color: white;
+                cursor: pointer;
+            }
+            >i:nth-of-type(2){
+                display: none;
+            }
+            >input:nth-of-type(6)
+            {
+                margin-left: 10px;              
+            }       
+            >input:focus{
+                border-bottom: 2px solid white;                
+            }
+            >label{                
+                padding:15px 5px;
+                width: 100%;
+                height: 40px;
+                font-size: 15px;
+                color:rgb(206, 0, 0);
+                text-transform: capitalize;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            }
+            >div{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+               align-items: center;
+               margin:20px 0;
+               >button{
+                width: 120px;
+                height: 50px;
+                text-transform: capitalize;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                color:white;
+                border-radius: 10%;
+                background: transparent;
+                outline: none;
+                border: 3px #2d2d2d solid;  
+                transition: all 0.3s linear;
+                cursor: pointer; 
+                font-size: 16px;                        
+               }
+               >button:hover{
+                background-color: white;
+                color:#2d2d2d;
+                border: none;
+
+            } 
+            }
+        }
+    }
+
+ 
+   
+}
+main::after{
+    content: '';
+    position: absolute;
+    z-index: 1 !important;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: rgba(111, 111, 108, 0.331);
+    background: linear-gradient(84deg, rgba(111, 111, 108, 0.361) 0%, rgba(27, 40, 43, 0.744) 56%, rgba(24, 2, 17, 0.626) 100%);
+} 
